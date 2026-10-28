@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="owl.css">
+</head>
+<body>
+    <!=====navbar=======>
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="image/images.jpeg" alt="Photography Studio Logo">
+                </a>
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Offcanvas Menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h1 class="memory-heading">
+                            <span class="word style-b" style="font-size: 30px;">PHOTOGRAPHY</span>
+                            <span class="word style-b" style="font-size: 30px;">STUDIO</span>
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item custom-dropdown">
+
+                                <a href="index.html" class="nav-link menu-btn active">
+                                    Home <span class="arrow"></span>
+                                </a>
+
+                                <ul class="custom-dropdown-menu">
+                                    <li>
+                                        <a href="#services">Services</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#ourwork">Our Work</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#gallery">Gallery</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-btn" href="about.html"> About </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link menu-btn" href="blog.html"> Blog </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-btn" href="contact.html"> Contact Us </a>
+                            </li>
+                        </ul>
+                        <!-- Search -->
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search">
+                            <button class="btn btn-dark search-btn" type="submit"> Search </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="corner-design">
+                <img src="image/83c880f2d4756d1daff908813754483c-removebg-preview.png" alt="Design">
+            </div>
+
+            <style>
+                .corner-design {
+                    position: absolute;
+                    top: 90px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 0;
+                }
+
+                .corner-design img {
+                    width: 200px;
+                    height: auto;
+                    display: block;
+                }
+            </style>
+        <!=====home=====>
+            <section class="hero" id="Home">
+                <div class="container">
+                    <div class="hero-content text-center">
+
+                        <a href="#contact">
+                            <div class="btn-consultation" target="_blank" rel="noopener noreferrer">
+                                Book Your Events
+                            </div>
+                        </a>
+                        <h1 class="memory-heading">
+                            <span class="word style-a">“ Turning</span>
+                            <span class="word style-b">Moments</span>
+                            <span class="word style-a">Into</span>
+                            <span class="word style-b">Timeless</span>
+                            <span class="word style-a">Memories ”</span>
+                        </h1>
+                        <div class="row row-cols-1 row-cols-md-3 g-4" id="services">
+                            <div class="col">
+                                <div class="card service-card h-100 border-0 shadow-sm">
+                                    <img src="image/Phozogy _ Template_files/service-1.jpg" alt="Photography Shooting">
+                                    <div class="card-body">
+                                        <h5>SHOOTING</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card service-card h-100 border-0 shadow-sm">
+                                    <img src="image/Phozogy _ Template_files/service-2.jpg" alt="Photography Videos">
+                                    <div class="card-body">
+                                        <h5>VIDEOS</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card service-card h-100 border-0 shadow-sm">
+                                    <img src="image/Phozogy _ Template_files/service-3.jpg" alt="Photo Editing">
+                                    <div class="card-body">
+                                        <h5>EDITING</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!=====our work=====>
+                <!-- ==================== OWL CAROUSEL CSS ==================== -->
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+                <!-- ==================== JQUERY ==================== -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                <!-- ==================== OWL CAROUSEL JS ==================== -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+                <!-- ==================== OWL CAROUSEL INITIALIZATION ==================== -->
+                <script>
+                    $(document).ready(function () {
+                        $(".review-carousel").owlCarousel({
+                            loop: true,
+                            margin: 10,
+                            autoplay: true,
+                            autoplayTimeout: 4000,
+                            autoplayHoverPause: true,
+                            smartSpeed: 800,
+                            responsive: {
+                                0: {
+                                    items: 1
+                                },
+                                576: {
+                                    items: 1
+                                },
+                                768: {
+                                    items: 2
+                                },
+                                1200: {
+                                    items: 3
+                                }
+                            }
+                        });
+                    });
+                </script>
+                <!====contact====>
+
+                    <section class="gallery-section" id="contact">
+                        <div class="section-heading">
+                            <span>GETIN TOUCH</span>
+                        </div>
+                        <h1 class="memory-heading">
+                            <span class="word style-a">Let's</span>
+                            <span class="word style-b">CaptureYour</span>
+                            <span class="word style-a">Story</span>
+                        </h1>
+                        <div class="contact-container">
+                            <div class="contact-info">
+                                <span class="contact-subtitle"></span>
+                                <h2></h2>
+                                <p> Have a special moment coming up? Whether it's a wedding, portrait
+                                    session, event, or creative photography project, we'd love to hear from
+                                    you. </p>
+                                <div class="contact-details">
+                                    <div class="contact-item">
+                                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                                        <div>
+                                            <h4>Phone</h4>
+                                            <p>+91 98765 43210</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                        <div>
+                                            <h4>Email</h4>
+                                            <p>hello@lensora.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i>
+                                        </div>
+                                        <div>
+                                            <h4>Location</h4>
+                                            <p>Chennai, Tamil Nadu, India</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <div class="contact-icon"><i class="fa-regular fa-clock"></i></div>
+                                        <div>
+                                            <h4>Working Hours</h4>
+                                            <p>Monday - Saturday, 9 AM - 7 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-form">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Your Name</label>
+                                            <input type="text" placeholder="Enter your name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email Address</label>
+                                            <input type="email" placeholder="Enter your email" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Phone Number</label>
+                                            <input type="tel" placeholder="Enter your phone number">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Photography Service</label>
+                                            <select>
+                                                <option value="">Select Service</option>
+                                                <option>Wedding Photography</option>
+                                                <option>Portrait Photography</option>
+                                                <option>Pre-Wedding Photography</option>
+                                                <option>Event Photography</option>
+                                                <option>Fashion Photography</option>
+                                                <option>Product Photography</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Event Date</label>
+                                        <input type="date">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Your Message</label>
+                                        <textarea
+                                            placeholder="Tell us about your photography requirements..."></textarea>
+                                    </div>
+                                    <button type="submit" class="contact-btn"> Send Enquiry <i
+                                            class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+
+                    <footer>© 2026 PHOTOGRAPHY. All Rights Reserved.</footer>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                    <script
+                        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+                    <script>
+                        $(document).ready(function () {
+                            // Left to Right Carousel
+                            $('.category-carousel').eq(0).owlCarousel({
+                                loop: true,
+                                margin: 25,
+                                autoplay: true,
+                                autoplayTimeout: 900,
+                                autoplayHoverPause: true,
+                                smartSpeed: 1000,
+                                rtl: false,
+                                responsive: {
+                                    0: {
+                                        items: 1
+                                    },
+                                    576: {
+                                        items: 2
+                                    },
+                                    768: {
+                                        items: 3
+                                    },
+                                    992: {
+                                        items: 4
+                                    },
+                                    1200: {
+                                        items: 4
+                                    }
+                                }
+                            });
+                            // Right to Left Carousel
+                            $('.category-carousel').eq(1).owlCarousel({
+                                loop: true,
+                                margin: 25,
+                                autoplay: true,
+                                autoplayTimeout: 900,
+                                autoplayHoverPause: true,
+                                smartSpeed: 1000,
+                                rtl: true,
+                                responsive: {
+                                    0: {
+                                        items: 1
+                                    },
+                                    576: {
+                                        items: 2
+                                    },
+                                    768: {
+                                        items: 3
+                                    },
+                                    992: {
+                                        items: 4
+                                    },
+                                    1200: {
+                                        items: 4
+                                    }
+                                }
+                            });
+                        });
+                    </script>
+</body>
+
+</html>

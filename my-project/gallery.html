@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="owl.css">
+</head>
+<body>
+    <!=====navbar=======>
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="image/images.jpeg" alt="Photography Studio Logo">
+                </a>
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Offcanvas Menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h1 class="memory-heading">
+                            <span class="word style-b" style="font-size: 30px;">PHOTOGRAPHY</span>
+                            <span class="word style-b" style="font-size: 30px;">STUDIO</span>
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item custom-dropdown">
+
+                                <a href="index.html" class="nav-link menu-btn active">
+                                    Home <span class="arrow"></span>
+                                </a>
+
+                                <ul class="custom-dropdown-menu">
+                                    <li>
+                                        <a href="#services">Services</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#ourwork">Our Work</a>
+                                    </li>
+
+
+                                </ul>
+
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link menu-btn" href="about.html"> About </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link menu-btn" href="gallery.html"> Gallery </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link menu-btn" href="blog.html"> Blog </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-btn" href="contact.html"> Contact Us </a>
+                            </li>
+                        </ul>
+                        <!-- Search -->
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search">
+                            <button class="btn btn-dark search-btn" type="submit"> Search </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!=====home=====>
+            <div class="corner-design">
+                <img src="image/83c880f2d4756d1daff908813754483c-removebg-preview.png" alt="Design">
+            </div>
+
+            <style>
+                .corner-design {
+                    position: absolute;
+                    top: 90px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 0;
+                }
+
+                .corner-design img {
+                    width: 200px;
+                    height: auto;
+                    display: block;
+                }
+
+
+
+                
+
+                
+
+
+
+                .visual-divider span {
+                    flex: 1;
+
+                    height: 1px;
+
+                    background: rgba(0, 0, 0, .12);
+                }
+
+                .visual-divider small {
+                    color: #999;
+
+                    font-size: 8px;
+
+                    letter-spacing: 3px;
+
+                    white-space: nowrap;
+                }
+
+                .story-mosaic {
+                    display: grid;
+
+                    grid-template-columns: repeat(12, 1fr);
+
+                    grid-auto-rows: 90px;
+
+                    gap: 16px;
+                }
+
+
+
+                .story-frame {
+                    position: relative;
+
+                    overflow: hidden;
+
+                    background: #ddd;
+
+                    cursor: pointer;
+                }
+
+
+                /* UNIQUE POSITIONS */
+
+                .story-01 {
+                    grid-column: span 5;
+                    grid-row: span 7;
+                }
+
+                .story-02 {
+                    grid-column: span 4;
+                    grid-row: span 5;
+                }
+
+                .story-03 {
+                    grid-column: span 3;
+                    grid-row: span 5;
+                }
+
+                .story-04 {
+                    grid-column: span 4;
+                    grid-row: span 6;
+                }
+
+                .story-05 {
+                    grid-column: span 3;
+                    grid-row: span 7;
+                }
+
+                .story-06 {
+                    grid-column: span 5;
+                    grid-row: span 6;
+                }
+
+                .story-07 {
+                    grid-column: span 4;
+                    grid-row: span 6;
+                }
+
+                .story-08 {
+                    grid-column: span 5;
+                    grid-row: span 7;
+                }
+
+                .story-09 {
+                    grid-column: span 3;
+                    grid-row: span 6;
+                }
+
+                .story-10 {
+                    grid-column: span 4;
+                    grid-row: span 6;
+                }
+
+                .story-11 {
+                    grid-column: span 5;
+                    grid-row: span 7;
+                }
+
+                .story-12 {
+                    grid-column: span 3;
+                    grid-row: span 5;
+                }
+
+                .story-frame img {
+                    width: 100%;
+                    height: 100%;
+
+                    object-fit: cover;
+
+                    transition:
+                        transform 1s cubic-bezier(.2, .7, .2, 1),
+                        filter .7s ease;
+                }
+
+                .story-frame:hover img {
+                    transform: scale(1.1);
+                    filter: brightness(.72);
+                }
+
+
+
+
+                .story-shade {
+                    position: absolute;
+
+                    inset: 0;
+
+                    background:
+                        linear-gradient(to top,
+                            rgba(0, 0, 0, .85),
+                            rgba(0, 0, 0, .08) 65%,
+                            transparent);
+
+                    opacity: 0;
+
+                    transition: .5s ease;
+                }
+
+                .story-frame:hover .story-shade {
+                    opacity: 1;
+                }
+
+
+                .story-index {
+                    position: absolute;
+
+                    top: 20px;
+                    left: 20px;
+
+                    z-index: 3;
+
+                    width: 42px;
+                    height: 42px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    border: 1px solid rgba(255, 255, 255, .65);
+
+                    background: rgba(0, 0, 0, .08);
+
+                    backdrop-filter: blur(8px);
+
+                    color: #fff;
+
+                    font-size: 9px;
+
+                    letter-spacing: 2px;
+
+                    opacity: 0;
+
+                    transform: translateY(-15px);
+
+                    transition: .45s ease;
+                }
+
+                .story-frame:hover .story-index {
+                    opacity: 1;
+
+                    transform: translateY(0);
+                }
+
+
+
+                .story-caption {
+                    position: absolute;
+
+                    left: 25px;
+                    right: 70px;
+                    bottom: 25px;
+
+                    z-index: 4;
+
+                    color: white;
+
+                    opacity: 0;
+
+                    transform: translateY(20px);
+
+                    transition: .5s ease;
+                }
+
+                .story-frame:hover .story-caption {
+                    opacity: 1;
+
+                    transform: translateY(0);
+                }
+
+                .story-caption small {
+                    display: block;
+
+                    margin-bottom: 8px;
+
+                    color: rgba(255, 255, 255, .7);
+
+                    font-size: 9px;
+
+                    letter-spacing: 3px;
+
+                    text-transform: uppercase;
+                }
+
+                .story-caption h3 {
+                    margin: 0;
+
+                    font-family: "Playfair Display", serif;
+
+                    font-size: clamp(23px, 2vw, 34px);
+
+                    font-weight: 400;
+
+                    line-height: 1.1;
+                }
+
+                .story-caption p {
+                    margin: 8px 0 0;
+
+                    color: rgba(255, 255, 255, .7);
+
+                    font-size: 11px;
+                }
+
+
+
+                .story-action {
+                    position: absolute;
+
+                    right: 20px;
+                    bottom: 20px;
+
+                    z-index: 5;
+
+                    width: 44px;
+                    height: 44px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    border: 1px solid rgba(255, 255, 255, .6);
+
+                    border-radius: 50%;
+
+                    color: white;
+
+                    opacity: 0;
+
+                    transform: translateX(15px);
+
+                    transition: .45s ease;
+                }
+
+                .story-frame:hover .story-action {
+                    opacity: 1;
+
+                    transform: translateX(0);
+                }
+
+                .story-action:hover {
+                    background: #fff;
+
+                    color: #111;
+                }
+
+
+
+                .story-footer {
+                    padding: 65px 0 90px;
+                }
+
+                .story-footer-line {
+                    width: 100%;
+                    height: 1px;
+
+                    background: rgba(0, 0, 0, .12);
+
+                    margin-bottom: 25px;
+                }
+
+                .story-footer-content {
+                    display: flex;
+
+                    align-items: center;
+
+                    justify-content: space-between;
+
+                    gap: 20px;
+                }
+
+                .story-footer-content>span {
+                    font-family: "Playfair Display", serif;
+
+                    font-size: 45px;
+
+                    color: #888;
+                }
+
+                .story-footer-content p {
+                    margin: 0;
+
+                    color: #999;
+
+                    font-size: 9px;
+
+                    letter-spacing: 3px;
+                }
+
+                .story-footer-content a {
+                    display: inline-flex;
+
+                    align-items: center;
+
+                    gap: 14px;
+
+                    color: #111;
+
+                    font-size: 10px;
+
+                    letter-spacing: 2px;
+
+                    text-transform: uppercase;
+
+                    border-bottom: 1px solid #111;
+
+                    padding-bottom: 8px;
+                }
+
+                .story-footer-content a i {
+                    transition: .3s ease;
+                }
+
+                .story-footer-content a:hover i {
+                    transform: translateX(5px);
+                }
+
+
+
+
+                @media (max-width: 1000px) {
+
+                    .visual-story-section {
+                        padding: 80px 20px 0;
+                    }
+
+                    .visual-story-intro {
+                        grid-template-columns: 1fr;
+
+                        gap: 35px;
+
+                        padding-bottom: 50px;
+                    }
+
+                    .intro-right {
+                        justify-self: start;
+                    }
+
+                    .story-mosaic {
+                        grid-template-columns: repeat(2, 1fr);
+
+                        grid-auto-rows: 350px;
+                    }
+
+                    .story-frame {
+                        grid-column: span 1 !important;
+
+                        grid-row: span 1 !important;
+                    }
+
+                    .story-01,
+                    .story-06,
+                    .story-08,
+                    .story-11 {
+                        grid-row: span 2 !important;
+                    }
+
+                }
+
+
+
+                @media (max-width: 650px) {
+
+                    .visual-story-section {
+                        padding: 65px 15px 0;
+                    }
+
+                    .intro-left h2 {
+                        font-size: 55px;
+
+                        letter-spacing: -3px;
+                    }
+
+                    .intro-left h2 em {
+                        margin-left: 25px;
+                    }
+
+                    .intro-right p {
+                        font-size: 13px;
+                    }
+
+                    .visual-divider {
+                        margin-bottom: 15px;
+                    }
+
+                    .story-mosaic {
+                        grid-template-columns: 1fr;
+
+                        grid-auto-rows: 380px;
+
+                        gap: 12px;
+                    }
+
+                    .story-frame,
+                    .story-01,
+                    .story-02,
+                    .story-03,
+                    .story-04,
+                    .story-05,
+                    .story-06,
+                    .story-07,
+                    .story-08,
+                    .story-09,
+                    .story-10,
+                    .story-11,
+                    .story-12 {
+                        grid-column: span 1 !important;
+
+                        grid-row: span 1 !important;
+                    }
+
+                    .story-shade {
+                        opacity: 1;
+                    }
+
+                    .story-index {
+                        opacity: 1;
+
+                        transform: translateY(0);
+
+                        top: 15px;
+                        left: 15px;
+                    }
+
+                    .story-caption {
+                        opacity: 1;
+
+                        transform: translateY(0);
+
+                        left: 18px;
+                        bottom: 18px;
+                    }
+
+                    .story-action {
+                        opacity: 1;
+
+                        transform: translateX(0);
+
+                        right: 16px;
+                        bottom: 16px;
+                    }
+
+                    .story-footer {
+                        padding: 50px 0 65px;
+                    }
+
+                    .story-footer-content {
+                        flex-wrap: wrap;
+                    }
+
+                    .story-footer-content>span {
+                        font-size: 35px;
+                    }
+
+                }
+            </style>
+            <section class="hero" id="Home">
+                <div class="container"> <a href="contact.html">
+                        <div class="btn-consultation" target="_blank" rel="noopener noreferrer">
+                            Book Your Events
+                        </div>
+                    </a>
+                    <div class="hero-content text-center">
+
+                        <h1 class="memory-heading">
+                            <span class="word style-a">“  Moments</span>
+                            
+                            <span class="word style-b">Without Words. ”</span>
+                        </h1>
+                        
+
+                    </div>
+                </div>
+            </section>
+
+            </head>
+
+            <body>
+            
+
+
+                        <!-- =====================================
+             DECORATIVE LINE
+        ====================================== -->
+
+                        <div class="visual-divider">
+
+                            <span></span>
+
+                            <small>
+                                SCROLL TO EXPLORE
+                            </small>
+
+                            <span></span>
+
+                        </div>
+
+
+                        <!-- =====================================
+             12 IMAGE STORY MOSAIC
+        ====================================== -->
+
+                        <div class="story-mosaic" id="story-grid">
+
+
+                            <!-- STORY 01 -->
+
+                            <article class="story-frame story-01">
+
+                                <img src="https://i.pinimg.com/736x/0e/5d/a0/0e5da099c50083420930685a4e8b7622.jpg"
+                                    alt="Wedding Photography" loading="lazy">
+
+                                <div class="story-shade"></div>
+
+                                <span class="story-index">
+                                    01
+                                </span>
+
+                                <div class="story-caption">
+
+                                    <small>
+                                        Wedding
+                                    </small>
+
+                                    <h3>
+                                        Wedding Stories
+                                    </h3>
+
+                                    <p>
+                                        Love, emotion & unforgettable moments
+                                    </p>
+
+                                </div>
+
+                                <a href="gallery.html" class="story-action">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </article>
+
+
+                            <!-- STORY 02 -->
+
+                            <article class="story-frame story-02">
+
+                                <img src="https://i.pinimg.com/736x/75/41/ef/7541eff04506181851ec4afa6f3da525.jpg"
+                                    alt="Couple Photography" loading="lazy">
+
+                                <div class="story-shade"></div>
+
+                                <span class="story-index">
+                                    02
+                                </span>
+
+                                <div class="story-caption">
+
+                                    <small>
+                                        Couples
+                                    </small>
+
+                                    <h3>
+                                        Together
+                                    </h3>
+
+                                    <p>
+                                        Two hearts, one beautiful story
+                                    </p>
+
+                                </div>
+
+                                <a href="gallery.html" class="story-action">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </article>
+                            <!-- STORY 03 -->
+
+                            <article class="story-frame story-03">
+
+                                <img src="https://i.pinimg.com/736x/b7/6f/c0/b76fc0f94eb98dbeb5971a1dac85f3bd.jpg"
+                                    alt="Portrait Photography" loading="lazy">
+
+                                <div class="story-shade"></div>
+
+                                <span class="story-index">
+                                    03
+                                </span>
+
+                                <div class="story-caption">
+
+                                    <small>
+                                        Portraits
+                                    </small>
+
+                                    <h3>
+                                        Portraits
+                                    </h3>
+
+                                    <p>
+                                        Personality through photography
+                                    </p>
+
+                                </div>
+
+                                <a href="gallery.html" class="story-action">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </article>
+
+
+                            <!-- STORY 04 -->
+
+                            <article class="story-frame story-04">
+
+                                <img src="https://i.pinimg.com/736x/0c/48/96/0c489629d94ea919bacec1432bd09821.jpg"
+                                    alt="Event Photography" loading="lazy">
+
+                                <div class="story-shade"></div>
+
+                                <span class="story-index">
+                                    04
+                                </span>
+
+                                <div class="story-caption">
+
+                                    <small>
+                                        Events
+                                    </small>
+
+                                    <h3>
+                                        Celebrations
+                                    </h3>
+
+                                    <p>
+                                        Moments worth remembering
+                                    </p>
+
+                                </div>
+
+                                <a href="gallery.html" class="story-action">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </article>
+
+
+                            <!-- STORY 05 -->
+
+                            <article class="story-frame story-05">
+
+                                <img src="https://i.pinimg.com/736x/91/55/54/915554e4d0be25dacac526fa81f54ba4.jpg"
+                                    alt="Outdoor Photography" loading="lazy">
+
+                                <div class="story-shade"></div>
+
+                                <span class="story-index">
+                                    05
+                                </span>
+
+                                <div class="story-caption">
+
+                                    <small>
+                                        Outdoor
+                                    </small>
+
+                                    <h3>
+                                        Wild Moments
+                                    </h3>
+
+                                    <p>
+                                        Natural light and authentic emotion
+                                    </p>
+
+                                </div>
+
+                                <a href="gallery.html" class="story-action">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </article>
+
+
+                            <!-- STORY 06 -->
+
+                            <article class="story-frame story-06">
+
+                                <img src="https://i.pinimg.com/736x/cf/54/d3/cf54d3435bcd8eb438c1274e4ff59209.jpg"
+                                    alt="Creative Photography" loading="lazy">
+
+                                <div class="story-shade"></div>
+
+                                <span class="story-index">
+                                    06
+                                </span>
+
+                                <div class="story-caption">
+
+                                    <small>
+                                        Creative
+                                    </small>
+
+                                    <h3>
+                                        Creative Stories
+                                    </h3>
+
+                                    <p>
+                                        Imagination meets the camera
+                                    </p>
+
+                                </div>
+
+                                <a href="gallery.html" class="story-action">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </article>
+
+
+                            <!-- STORY 07 -->
+
+                            <article class="story-frame story-07">
+
+                                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Wedding Couple" loading="lazy">
+
+                                <div class="story-shade"></div>
+
+                                <span class="story-index">
+                                    07
+                                </span>
+
+                                <div class="story-caption">
+
+                                    <small>
+                                        Love
+                                    </small>
+
+                                    <h3>
+                                        Pure Emotion
+                                    </h3>
+
+                                    <p>
+                                        Moments that speak without words
+                                    </p>
+
+                                </div>
+
+                                <a href="gallery.html" class="story-action">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </article>
+
+
+                            <!-- STORY 08 -->
+
+                            <article class="story-frame story-08">
+
+                                <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Wedding Celebration" loading="lazy">
+
+                                <div class="story-shade"></div>
+
+                                <span class="story-index">
+                                    08
+                                </span>
+
+                                <div class="story-caption">
+
+                                    <small>
+                                        Celebration
+                                    </small>
+
+                                    <h3>
+                                        Forever Begins
+                                    </h3>
+
+                                    <p>
+                                        Capturing the beginning of forever
+                                    </p>
+
+                                </div>
+
+                                <a href="gallery.html" class="story-action">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </article>
+
+
+                            <!-- STORY 09 -->
+
+                            <article class="story-frame story-09">
+
+                                <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Nature Photography" loading="lazy">
+
+                                <div class="story-shade"></div>
+
+                                <span class="story-index">
+                                    09
+                                </span>
+
+                                <div class="story-caption">
+
+                                    <small>
+                                        Nature
+                                    </small>
+
+                                    <h3>
+                                        Natural Beauty
+                                    </h3>
+
+                                    <p>
+                                        Beauty found in simple moments
+                                    </p>
+
+                                </div>
+
+                                <a href="gallery.html" class="story-action">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </article>
+
+
+                            <!-- STORY 10 -->
+
+                            <article class="story-frame story-10">
+
+                                <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Bride Photography" loading="lazy">
+
+                                <div class="story-shade"></div>
+
+                                <span class="story-index">
+                                    10
+                                </span>
+
+                                <div class="story-caption">
+
+                                    <small>
+                                        Bridal
+                                    </small>
+
+                                    <h3>
+                                        Bridal Glow
+                                    </h3>
+
+                                    <p>
+                                        Elegance, beauty and confidence
+                                    </p>
+
+                                </div>
+
+                                <a href="gallery.html" class="story-action">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </article>
+
+
+                            <!-- STORY 11 -->
+
+                            <article class="story-frame story-11">
+
+                                <img src="https://i.pinimg.com/736x/ae/91/79/ae917956be487321884c03528d264147.jpg"
+                                    alt="Wedding Ceremony" loading="lazy">
+
+                                <div class="story-shade"></div>
+
+                                <span class="story-index">
+                                    11
+                                </span>
+
+                                <div class="story-caption">
+
+                                    <small>
+                                        Ceremony
+                                    </small>
+
+                                    <h3>
+                                        The Big Day
+                                    </h3>
+
+                                    <p>
+                                        Every detail matters
+                                    </p>
+
+                                </div>
+
+                                <a href="gallery.html" class="story-action">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </article>
+
+
+                            <!-- STORY 12 -->
+
+                            <article class="story-frame story-12">
+
+                                <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Wedding Photography" loading="lazy">
+
+                                <div class="story-shade"></div>
+
+                                <span class="story-index">
+                                    12
+                                </span>
+
+                                <div class="story-caption">
+
+                                    <small>
+                                        Memories
+                                    </small>
+
+                                    <h3>
+                                        Timeless
+                                    </h3>
+
+                                    <p>
+                                        Memories that stay forever
+                                    </p>
+
+                                </div>
+
+                                <a href="gallery.html" class="story-action">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </article>
+
+
+                        </div>
+
+
+                        <!-- =====================================
+             SECTION FOOTER
+        ====================================== -->
+
+                        <div class="story-footer">
+
+                            <div class="story-footer-line"></div>
+
+                            <div class="story-footer-content">
+
+                                <span>
+                                    12
+                                </span>
+
+                                <p>
+                                    STORIES CAPTURED
+                                </p>
+
+                                <a href="gallery.html">
+
+                                    View Full Gallery
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+                
+
+
+            </body>
+
+</html>
